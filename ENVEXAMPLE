@@ -1,0 +1,3 @@
+# Get Username and Password from 1Password 
+export TF_VAR_apic_username=$(op get item <ITEM UUID> --fields username)
+export TF_VAR_apic_password=$(op get item <ITEM UUID> --fields password)
